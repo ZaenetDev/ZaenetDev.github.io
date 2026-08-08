@@ -8,46 +8,99 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header shell">
     <a class="wordmark" href="#top" aria-label="Santo D'Amico home">SD</a>
-    <a class="contact-link" href="mailto:s.damico@live.com">s.damico@live.com</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main id="top">
-    <section class="intro" aria-labelledby="intro-heading">
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="intro-heading">
       <p class="eyebrow">Pittsburgh, Pennsylvania</p>
-      <h1 id="intro-heading">Santo D'Amico<br><em>Infrastructure Reliability Engineer</em></h1>
+      <h1 id="intro-heading">Santo D'Amico</h1>
+      <p class="role">Infrastructure Reliability Engineer</p>
       <p class="lede">I build practical reliability systems: backup and recovery workflows, observable services, and evidence-driven operational improvements.</p>
-      <nav class="intro-links" aria-label="Professional links">
-        <a href="https://www.linkedin.com/in/santodamico/">LinkedIn</a>
-        <a href="mailto:s.damico@live.com">Email</a>
+      <nav class="hero-actions" aria-label="Featured and professional links">
+        <a class="button button-primary" href="#work">View selected work</a>
+        <a class="button button-secondary" href="mailto:s.damico@live.com">Email</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/santodamico/">LinkedIn</a>
       </nav>
     </section>
 
-    <section class="work" aria-labelledby="work-heading">
+    <section class="section" id="work" aria-labelledby="work-heading">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
         <h2 id="work-heading">Reliability work that makes recovery and operations testable.</h2>
       </div>
-
       <article class="project">
         <p class="project-type">Case study · Reliability engineering</p>
         <h3>Palworld reliability case study</h3>
-        <p>A public engineering case study on strengthening backup, recovery, observability, and service continuity through documented validation.</p>
+        <p class="project-summary">A public engineering case study on strengthening backup and recovery, observability, automation and troubleshooting, service continuity, and documented validation.</p>
+        <div class="project-points">
+          <div>
+            <h4>Problem</h4>
+            <p>Backup claims alone do not demonstrate a recoverable service.</p>
+          </div>
+          <div>
+            <h4>Contribution</h4>
+            <p>I strengthened recovery, observability, and operational workflows together.</p>
+          </div>
+          <div>
+            <h4>Public proof</h4>
+            <p>The documented case study shows the validation approach.</p>
+          </div>
+        </div>
         <a class="project-link" href="https://github.com/ZaenetDev/palworld-reliability-case-study">Read the case study <span aria-hidden="true">↗</span></a>
       </article>
     </section>
 
-    <section class="focus" aria-labelledby="focus-heading">
-      <p class="eyebrow">Focus</p>
-      <h2 id="focus-heading">Reliability is clearer when the system can show its work.</h2>
-      <p>I focus on observability, recovery validation, automation, and troubleshooting—turning operational assumptions into checks that teams can run, understand, and improve.</p>
+    <section class="section" aria-labelledby="reliability-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Reliability lens</p>
+        <h2 id="reliability-heading">Make system state and recovery paths clear.</h2>
+      </div>
+      <div class="lens-grid">
+        <article>
+          <h3>Observe</h3>
+          <p>Distinguish healthy, degraded, and unknown states.</p>
+        </article>
+        <article>
+          <h3>Recover</h3>
+          <p>Validate recovery paths rather than relying on backup claims.</p>
+        </article>
+        <article>
+          <h3>Improve</h3>
+          <p>Use automation and troubleshooting to make the next operation safer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-heading">Operational experience, applied to reliability.</h2>
+      </div>
+      <p class="about-copy">I work on a DevOps team, bringing an IT operations foundation to reliability work focused on observability, recovery validation, automation, and troubleshooting. I turn operational assumptions into checks and workflows that make systems easier to understand, recover, and improve.</p>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-heading">Let’s connect.</h2>
+      </div>
+      <address class="contact-row">
+        <span>Pittsburgh, PA</span>
+        <a href="mailto:s.damico@live.com">s.damico@live.com</a>
+        <a href="https://www.linkedin.com/in/santodamico/">LinkedIn</a>
+      </address>
     </section>
   </main>
 
-  <footer>
+  <footer class="shell">
     <p>© 2026 Santo D'Amico</p>
-    <a href="mailto:s.damico@live.com">Get in touch</a>
   </footer>
 </body>
 </html>
