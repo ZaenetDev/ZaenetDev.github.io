@@ -227,6 +227,8 @@ footer p { margin: 0; }
 .title-context { color: #c4d4e6; font-weight: 500; }
 .timeline-company { margin: 0.3rem 0 0; color: #9cc7f4; font-weight: 650; }
 .timeline-date { flex: 0 0 auto; margin: 0; color: var(--accent); font-size: 0.82rem; font-weight: 750; }
+.timeline-history { margin: 1rem 0 0; color: #c4d4e6; font-size: 0.88rem; }
+.timeline-history span { margin-inline: 0.4rem; color: var(--accent); }
 .achievement-list { margin: 1.35rem 0 0; padding-left: 1.25rem; color: var(--muted); }
 .achievement-list li { margin-top: 0.72rem; padding-left: 0.25rem; }
 .achievement-list li::marker { color: var(--accent); }
